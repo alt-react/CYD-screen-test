@@ -11,7 +11,7 @@ void readyForTouch() {
   tft.fillScreen(TFT_BLACK);
   tft.setTextColor(TFT_WHITE, TFT_BLACK);
   tft.setTextFont(2); 
-  tft.drawCentreString("touch here to see if touch screen works", 160, 110, 2);
+  tft.drawCentreString("touch me", 160, 110, 2);
 }
 
 void setup() {
@@ -35,7 +35,7 @@ void loop() {
     tft.fillScreen(TFT_GREEN);
     tft.setTextColor(TFT_RED, TFT_GREEN);
     tft.setTextFont(4); 
-    tft.drawCentreString("you touched me!", 160, 110, 4);
+    tft.drawCentreString("stop touching me!", 160, 110, 4);
     wasTouched = true;
   }
   
